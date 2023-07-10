@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <title>My Blog - {% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        django blog nav bar
+        <br>
+    </nav>
+    <div class="blog__content">
+        {% block content %}
+        {% endblock %}
+        <br>
+        <h1>django 게시물 구현 base.html </h1>
+    </div>
+</body>
+</html>
